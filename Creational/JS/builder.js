@@ -1,0 +1,54 @@
+"use strict";
+/*
+The Builder pattern separates the construction of a complex object from its representation
+so that the same construction process can create different representations.
+
+Pros:
+Provides a flexible way to construct complex objects step by step.
+Keeps the object construction code isolated from the client.
+
+Cons:
+Can become overly complex if the product has too many features or attributes.
+
+Real-World Example:
+Building a complex object like a meal with various courses (starter, main dish, dessert),
+where you can customize the meal's components.
+*/
+class Car {
+    constructor(engine, wheels, colour) {
+        this.engine = engine;
+        this.wheels = wheels;
+        this.colour = colour;
+    }
+    display() {
+        console.log(`Car with ${this.engine} engine, ${this.wheels} wheels, and ${this.colour} colour`);
+    }
+}
+class CarBuilder {
+    constructor() {
+        this.engine = "";
+        this.wheels = 0;
+        this.colour = "";
+    }
+    setEngine(engine) {
+        this.engine = engine;
+        return this;
+    }
+    setWheels(wheels) {
+        this.wheels = wheels;
+        return this;
+    }
+    setColor(colour) {
+        this.colour = colour;
+        return this;
+    }
+    build() {
+        return new Car(this.engine, this.wheels, this.colour);
+    }
+}
+const car = new CarBuilder()
+    .setEngine("v12")
+    .setWheels(4)
+    .setColor("Red")
+    .build();
+car.display(); // Car with V12 engine, 4 wheels, and Red colour
