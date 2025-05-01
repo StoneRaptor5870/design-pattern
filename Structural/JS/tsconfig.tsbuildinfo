@@ -1,0 +1,1 @@
+{"root":["../adapter.ts","../adapter_second_example.ts","../adapter_third_example.ts","../bridge.ts","../bridge_second_example.ts","../composite.ts","../decorator.ts","../facade.ts","../flyweight.ts","../flyweight_second_example.ts","../proxy.ts","../proxy_second_example.ts","../proxy_third_example.ts"],"version":"5.8.3"}
