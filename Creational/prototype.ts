@@ -2,6 +2,19 @@
  * The Prototype pattern is used to create duplicate objects while keeping performance in mind.
  * It involves creating a copy of an existing object rather than creating new ones.
  * 
+ * What it does:
+ * Allows you to clone existing objects without depending on their concrete classes
+ * effectively creating new objects by copying a prototype.
+ * 
+ * When to use:
+ * When object creation is expensive (e.g., large data or computation-heavy objects).
+ * When creating new instances is frequent and configuration is complex.
+ * When you want to keep creation logic in the object itself.
+ * 
+ * How it works:
+ * Define a clone() method in your base class or interface.
+ * Objects can then be copied/cloned without using new.
+ * 
  * Pros:
  * Efficient when creating new objects that are identical to an existing object.
  * Reduces the need to create new objects from scratch.

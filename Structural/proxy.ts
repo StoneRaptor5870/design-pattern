@@ -8,7 +8,9 @@
  * You want to add functionality without modifying the actual object.
  * 
  * How it works:
- * The proxy implements the same interface and forwards requests to the real object, optionally adding behavior.
+ * A proxy class implements the same interface as the real object.
+ * It holds a reference to the real object (or creates it when needed).
+ * It forwards method calls to the real object, optionally adding extra logic.
  * 
  * Real-life:
  * API Gateways.

@@ -5,11 +5,17 @@
  * 
  * Use When:
  * You have many similar objects that use too much memory.
+ * When object creation becomes a performance or memory bottleneck.
  * Object creation is costly and many instances share state.
  * 
  * How it works:
  * Separate intrinsic (shared) state from extrinsic (unique) state.
  * Reuse shared objects.
+ * 
+ * Divide object state into:
+ * Intrinsic state: Shared and stored in the flyweight.
+ * Extrinsic state: Passed in externally for context.
+ * Use a factory or cache to manage and reuse flyweights.
  * 
  * Real-life:
  * Text editors: characters share font metadata.

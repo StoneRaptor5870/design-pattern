@@ -9,6 +9,10 @@
  * 
  * How it works:
  * Wrap the original object with a new object that adds behavior.
+ * You create a wrapper class (decorator) that:
+ * Implements the same interface as the object it decorates.
+ * Stores a reference to the original object.
+ * Adds new behavior before or after delegating calls to the original object.
  * 
  * Real-life:
  * Middleware in Express.js.

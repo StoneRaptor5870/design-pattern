@@ -1,6 +1,10 @@
 /**
  * Adapter Patter (Wrapper)
  * 
+ * What it does:
+ * The Adapter Pattern allows objects with incompatible interfaces to work together by converting the
+ * interface of one class into an interface expected by the clients.
+ * 
  * Use When:
  * You want to use an existing class but its interface doesn’t match your needs.
  * Integrating with legacy code.

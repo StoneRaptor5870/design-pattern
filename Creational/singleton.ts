@@ -2,6 +2,18 @@
 The Singleton pattern ensures a class has only one instance and provides a global point
 of access to that instance.
 
+What it does:
+Ensures that a class has only one instance and provides a global point of access to it.
+
+When to use:
+When you need exactly one object to coordinate actions across a system (e.g. a Logger, Configuration Manager, Database Connection).
+When global state is acceptable and required in a controlled manner.
+
+How it works:
+You prevent external instantiation of the class.
+Maintain a static reference to a single instance.
+Provide a static method to access it.
+
 Pros:
 Ensures a single instance is used across the application.
 Provides a global point of access to the instance.

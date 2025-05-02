@@ -9,6 +9,9 @@
  * 
  * How it works:
  * Create a tree structure where both leaf nodes and composite nodes implement the same interface.
+ * You define a common interface (Component) for all elements in the structure. Both leaf and composite classes implement this interface:
+ * Leaf represents simple objects.
+ * Composite contains children and delegates operations to them.
  * 
  * Real-life:
  * DOM nodes (div, span) with children.

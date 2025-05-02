@@ -2,6 +2,20 @@
 The Abstract Factory pattern provides an interface for creating families of related or
 dependent objects without specifying their concrete classes.
 
+What it does:
+Provides an interface for creating families of related or dependent objects without specifying their concrete classes.
+
+When to use:
+When your system needs to be independent of how its objects are created.
+When you want to ensure consistency among products in a family (e.g., GUI components that look the same across platforms).
+When you want to switch entire product families easily.
+
+How it works:
+Define abstract product interfaces (e.g., Button, Checkbox).
+Create concrete products that implement those interfaces.
+Define an abstract factory interface that declares creation methods for each product.
+Implement concrete factories for different product families.
+
 Pros:
 Allows the creation of related objects in a consistent manner.
 Promotes loose coupling and separation of concerns.

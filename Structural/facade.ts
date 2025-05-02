@@ -4,11 +4,15 @@
  * Purpose: Provide a simplified interface to a complex subsystem.
  * 
  * Use When:
+ * When you want to provide a unified interface to a set of interfaces in a subsystem.
  * You want to hide a complex subsystem behind a simpler interface.
+ * To decouple clients from the subsystem and reduce dependencies.
  * You want to make a library or API easier to use.
  * 
  * How it works:
  * A facade class wraps the subsystem and provides higher-level methods.
+ * The Facade class sits on top of complex subsystems and delegates calls to them.
+ * The client interacts with the facade, not the subsystem directly.
  * 
  * Real-life:
  * jQuery abstracts complex DOM APIs.
